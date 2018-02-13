@@ -1,0 +1,52 @@
+{
+  "name": "houses",
+  "version": "1.0.0",
+  "description": "houses, a small api to fetch house-data",
+  "main": "app/index.js",
+  "author": "ElisFilipsson",
+  "license": "ISC",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "NODE_ENV=development nodemon app/index.js",
+    "build": "rm -r ./dist && NODE_ENV=production babel app -d dist cp -R app/assets/. dist/assets "
+  },
+  "dependencies": {
+    "aws-sdk": "^2.141.0",
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "mysql": "^2.15.0",
+    "sequelize": "^3.24.7",
+    "sequelize-cli": "^2.5.1",
+    "sequelize-hierarchy": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.23.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-dynamic-import-node": "^1.0.2",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babel-register": "^6.26.0",
+    "casual": "^1.5.19",
+    "chalk": "^2.3.0",
+    "cross-env": "^5.0.1",
+    "css-mqpacker": "^6.0.1",
+    "dotenv": "^4.0.0",
+    "eslint": "^4.1.1",
+    "eslint-config-react-app": "^1.0.5",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.1",
+    "eslint-plugin-jsx-a11y": "5.1.0",
+    "eslint-plugin-react": "^7.1.0",
+    "nodemon": "^1.11.0",
+    "prettier": "^1.5.2",
+    "rollup": "^0.43.0",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
+}
