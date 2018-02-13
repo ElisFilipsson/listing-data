@@ -1,0 +1,15 @@
+@import '../../node_modules/bulma/sass/utilities/initial-variables';
+/* Override Bulma theme defaults */
+
+$family-sans-serif: 'Helvetica', sans-serif;
+$primary: hsl(202, 61%, 49%); // rgb(49, 145, 202) // HEX: #3191ca
+$danger: hsl(0, 81%, 69%);  // HEX: #f06e6e
+$light: rgb(252, 252, 252);
+
+$body-size: 14px;
+$link-hover: $primary;
+$size-7: 0.85rem;
+$message-background-color: rgb(240, 240, 240);
+$notification-background-color: rgb(240, 240, 240);
+
+@import '../../node_modules/bulma/bulma';
