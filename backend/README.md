@@ -15,7 +15,7 @@ Node.js - backend, Vue.js - frontend
 
     `yarn` 
     
-    in root folder.
+    in backend and in frontend folder.
 
 * Navigate to backend folder:
 * Run 
